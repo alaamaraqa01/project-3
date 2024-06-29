@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1 id="world">World Countries List</h1>
+            <h4 id="countries">Total Numbers Of Countries are : 193</h4>
+            <h3 id="hidden"></h3>
+        </div>
+        <div id="buttons">
+            <button onclick="StartsWith()" id="start">Starting Word</button>
+            <button onclick="include()" id="any">Search With any Word</button>
+            <button onclick="filter()" id="filter">
+                <i class="fas fa-sort-alpha-down"></i>
+
+            </button>
+        </div>
+        <div class="search-container">
+            <input id="search" type="text" placeholder="Search Country..." name="search">
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div id="countries-list">
+    </div>    
+
+    <script src="countries.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
